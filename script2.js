@@ -1,3 +1,5 @@
 const largeNubmer = 365;
 
-export default largeNubmer;
+module.exports = {
+    largeNubmer: largeNubmer   
+};
