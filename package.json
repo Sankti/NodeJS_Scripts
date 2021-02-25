@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Sankti/NodeJS_Scripts/issues"
   },
-  "homepage": "https://github.com/Sankti/NodeJS_Scripts#readme"
+  "homepage": "https://github.com/Sankti/NodeJS_Scripts#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
