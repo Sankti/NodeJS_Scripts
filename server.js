@@ -5,9 +5,14 @@ const app = express();
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
-app.get("/", (req, res) => {
-    res.send("<h1>Root Directory</h1>");
+app.get("/:id", (req, res) => {
+
+    console.log(req.params);
+
+    res.status(404).send("Not found.");
 });
+
+
 
 app.get("/profile", (req, res) => {
     console.log(req.body);
