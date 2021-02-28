@@ -10,9 +10,15 @@ app.get("/profile", (req, res) => {
     res.sendFile("./public/profile.html", {root: __dirname});
 });
 
+// PROJECTS
 app.get('/api/projects', (req, res) => {
-    res.send([1, 2, 3])
-})
+    res.send([1, 2, 3]);
+});
+
+// PROJECT ID's
+app.get('/api/projects/:id', (req, res) => {
+    res.send(req.params.id);
+});
 
 
 // PORT
