@@ -9,6 +9,6 @@ axios_1["default"].get(url).then(function (response) {
     var todo = response.data;
     var id = todo.id;
     var title = todo.title;
-    var finished = todo.finished;
-    console.log("\n    Todo ID: " + id + "\n    Title: " + title + "\n    Is to be finished by: " + finished + "\n    ");
+    var completed = todo.completed;
+    console.log("\n    Todo ID: " + id + "\n    Title: " + title + "\n    Has it been finished: " + completed + "\n    ");
 });
