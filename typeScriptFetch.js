@@ -6,5 +6,9 @@ var axios_1 = require("axios");
 var url = "https://jsonplaceholder.typicode.com/todos/1";
 // Asynchronous promise:
 axios_1["default"].get(url).then(function (response) {
-    console.log(response.data);
+    var todo = response.data;
+    var id = todo.id;
+    var title = todo.title;
+    var finished = todo.finished;
+    console.log("\n    Todo ID: " + id + "\n    Title: " + title + "\n    Is to be finished by: " + finished + "\n    ");
 });
