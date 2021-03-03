@@ -1,7 +1,7 @@
 const today = new Date();
 today.getMonth;
 
-class person = {
+class.person = {
     age: 20
 };
 
