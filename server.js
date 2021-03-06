@@ -27,3 +27,23 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server listening on port ${port}.`);
 });
+
+
+
+// XML Read & Write Test
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+
+app.get("/breakfast", (req, res) => {
+    res.sendFile("./reed.xml", {root: __dirname});
+});
+
+function amendFile() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        document.getElementById("demo").innerHTML = this.responseText;
+    };
+    xhttp.open("GET", "ajax_info.txt", true);
+    xhttp.send();
+}
+
+amendFile();

@@ -17,7 +17,7 @@ export interface Food {
 
 
 
-fs.readFile('/reed.xml', 'utf8' , (err, data) => {
+fs.readFile('./reed.xml', 'utf8', (err, data) => {
     if (err) {
         console.error(err)
         return
