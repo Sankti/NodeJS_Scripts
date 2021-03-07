@@ -1,4 +1,4 @@
-var fs = require("fs"),
+fs = require("fs"),
 parseString = require("xml2js").parseString;
 
 fs.readFile("reed.xml", "utf-8", function(err, data) {
